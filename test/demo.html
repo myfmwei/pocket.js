@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Pocket.js Demo</title>
+    <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../jquery.Pocket.js"></script>
+    <link rel="stylesheet" type="text/css" href="../jquery.Pocket.css">
+    <script type="text/javascript" src="prism/prism.js"></script>
+    <link rel="stylesheet" type="text/css" href="prism/prism.css">
+</head>
+<body>
+<div>
+    <h1>无限极导航菜单</h1>
+
+    <ul id="p-nav">
+        <li><a href="#">首页</a>
+            <ul class="son-nav">
+                <li><a href="#">TEST</a></li>
+                <li><a href="#">TEST</a></li>
+                <li><a href="#">TEST3</a>
+                    <ul class="son-nav">
+                        <li><a href="#">TEST</a></li>
+                        <li><a href="#">TEST</a>
+                            <ul class="son-nav">
+                                <li><a href="#">TEST</a></li>
+                                <li><a href="#">TEST</a></li>
+                                <li><a href="#">TEST</a></li>
+                                <li><a href="#">TEST</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">TEST</a></li>
+                        <li><a href="#">TEST</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">TEST</a></li>
+            </ul>
+        </li>
+        <li><a href="#">首页</a>
+            <ul class="son-nav">
+                <li><a href="#">TEST</a></li>
+                <li><a href="#">TEST</a></li>
+                <li><a href="#">TEST</a></li>
+                <li><a href="#">TEST</a></li>
+            </ul>
+        </li>
+        <li><a href="#">首页</a>
+            <ul class="son-nav">
+                <li><a href="#">TEST</a></li>
+                <li><a href="#">TEST</a></li>
+                <li><a href="#">TEST</a></li>
+                <li><a href="#">TEST</a></li>
+            </ul>
+        </li>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">首页</a></li>
+    </ul>
+<script>
+$(function(){
+    $('#p-nav').nav();
+});
+</script>
+<br/>
+<br/>
+<pre>
+<code class="language-javascript">
+    // 示例1
+    $('#p-nav').nav();
+
+    // 示例2
+    $('#p-nav').nav({
+        dom:'.son-nav', //自定义子菜单
+        showtime: 300, //显示速度
+        hidetime: 200, //隐藏速度
+    });
+</code>
+</pre>
+</div>
+</body>
+</html>
