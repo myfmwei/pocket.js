@@ -1,9 +1,15 @@
-﻿ul,li{
+﻿/*!
+ @Name：pocket v0.0.1 网页特效合集
+ @Author：FM7
+ @Site：http://fmwei.com
+ @License：LGPL
+ */
+ul,li{
   margin: 0;
   padding: 0;
   list-style-type:none;
 }
-/* 导航菜单开始 */
+/* 无限极导航菜单开始 */
 #p-nav li{
   width: 100px;
   height: 32px;
@@ -38,4 +44,4 @@
 #p-nav .son-nav .son-nav li{
     z-index: 99;
 }
-/* 导航菜单结束 */
+/* 无限极导航菜单结束 */
