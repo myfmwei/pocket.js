@@ -1,17 +1,16 @@
-﻿/*! pocket v0.0.1 网页特效合集 License LGPL  http://fmwei.com By FM7 */
-/*!
+﻿/*!
  @Name：pocket v0.0.1 网页特效合集
  @Author：FM7
  @Site：http://fmwei.com
  @License：LGPL
  */
+
 ;(function($){
-    $.fn.nav = function(options) { //定义插件的名称，这里为userCp
+    $.fn.nav = function(options) {
         var defaults = {
-            //以下为该插件的属性及其默认值
-            dom: '.son-nav', //自定义子菜单
-            showtime: 300, //显示动画过渡速度
-            hidetime: 200, //隐藏动画过渡速度
+            dom: '.son-nav',
+            showtime: 300,
+            hidetime: 200,
             type: 'down',
         };
         var ops = $.extend(defaults,options);
@@ -48,6 +47,18 @@
         });
     };
 
+//返回顶部
+    $.fn.top = function(options) {
+            var fIn = $(this);
+            var fOut = $(this);
+            $(window).scroll( function() {
+                var scrollValue = $(window).scrollTop();
+                scrollValue > 100 ? fIn.fadeIn():fOut.fadeOut();
+            });
+            $(this).click(function(){
+                $('html,body').animate({scrollTop:0},500);
+            });
 
+    };
 
 })(jQuery);
