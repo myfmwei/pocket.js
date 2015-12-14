@@ -1,5 +1,4 @@
-# pocket.js
-网页特效合集
+# pocket.js 网页特效合集
 -------
 ### 1、无限极导航菜单
 ```javascript
