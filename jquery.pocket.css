@@ -10,6 +10,7 @@ ul,li{
   padding: 0;
   list-style-type:none;
 }
+a{color: #333}
 /* 无限极导航菜单开始 */
 #p-nav li{
   width: 100px;
@@ -57,6 +58,19 @@ ul,li{
 }
 /* 文本滚动结束 */
 
+/* 多行文本无缝滚动 */
+.p-text-list{
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+.p-text-list li{
+  line-height: 32px;
+}
+.p-text-list li.lieven{
+  background:#F0F2F3;
+}
 /* 弹窗开始 */
 .p-msg{
   text-align: center;

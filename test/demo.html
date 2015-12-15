@@ -78,7 +78,9 @@ $(function(){
 </code>
 </pre>
 </div>
-
+<br/>
+<br/>
+<hr />
 
 <div>
     <h1>文本滚动</h1>
@@ -106,6 +108,61 @@ $(function(){
 </code>
 </pre>
 </div>
+<br/>
+<br/>
+<hr />
+
+<div>
+    <h1>多行文本无缝滚动</h1>
+<div class="p-text-list">
+    <ul>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动1</a></li>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动2</a></li>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动3</a></li>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动4</a></li>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动5</a></li>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动6</a></li>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动7</a></li>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动8</a></li>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动9</a></li>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动10</a></li>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动11</a></li>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动12</a></li>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动13</a></li>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动14</a></li>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动15</a></li>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动16</a></li>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动17</a></li>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动18</a></li>
+        <li><a href="#">多行文本无缝滚动多行文本无缝滚动19</a></li>
+    </ul>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.p-text-list li:even').addClass('lieven');
+})
+$(function(){
+    $("div.p-text-list").listScroll({
+        speed:40, //数值越大，速度越慢
+        height:32 //li的高度
+    });
+});
+</script>
+
+<pre>
+<code class="language-javascript">
+    // 示例1
+    $("div.p-text-list").listScroll({
+        speed:40, //数值越大，速度越慢
+        height:32 //li的高度
+    });
+</code>
+</pre>
+
+</div>
+<br/>
+<br/>
+<hr />
 
 <div>
     <h1>提示弹框</h1>
@@ -138,10 +195,10 @@ $(function(){
 </code>
 </pre>
 </div>
+<br/>
+<br/>
+<hr />
 
-
-<div style="height:1000px"></div>
-<img src="../img/msg/l3.gif" height="32" width="32" alt="" />
 <div>
     <h1>返回顶部</h1>
 <!-- <div class="p-top" id="p-top" style="display:none;"><i></i></div> -->

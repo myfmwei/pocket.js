@@ -19,7 +19,15 @@
     $('.p-news-ul').textSlider(700);
 ```
 
-### 3、提示弹框
+### 3、多行文本无缝滚动
+```javascript
+    $("div.p-text-list").listScroll({
+        speed:40,
+        height:32
+    });
+```
+
+### 4、提示弹框
 ```javascript
     // 示例1
     msg('我是提示');
@@ -46,7 +54,7 @@
     msg('我是文字',config);
 ```
 
-### 4、返回顶部
+### 5、返回顶部
 ```javascript
     // 示例1
      $('#p-top').top();
