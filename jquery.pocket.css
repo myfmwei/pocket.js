@@ -47,6 +47,35 @@ ul,li{
 }
 /* 无限极导航菜单结束 */
 
+/* 文本滚动开始 */
+.p-news-list{
+  height: 30px;
+  overflow: hidden;
+}
+.p-news-list li{
+  line-height: 32px;
+}
+/* 文本滚动结束 */
+
+/* 弹窗开始 */
+.p-msg{
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  font-size: 14px;
+  display: none;
+}
+.p-msg i{
+  width: 28px;
+  height: 28px;
+  position: relative;
+  top: 9px;
+  margin-right: 5px;
+  background-size: 26px 26px;
+  background-repeat: no-repeat;
+}
+/* 弹窗结束 */
+
 /* 返回顶部开始 */
 #p-top{
   width: 45px;
@@ -64,4 +93,4 @@ ul,li{
   background: url(img/img.png) no-repeat 0px 0px;
   margin-top: 13px;
 }
-/* 返回顶部结束 */
+/* 返回顶部结束
